@@ -1,0 +1,61 @@
+@media (max-width: 320px) {
+    #header img {
+        width: 70px;
+    }
+    
+    #header ul {
+        display: none;
+    }
+
+    #main {
+        background-image: url('cabecalho2.jpg');
+        height: 200px;
+        margin-top: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #aside {
+        width: 100vw;
+        height: 850px;
+        font-size: 10px;
+    }
+
+    #aside .imagem .foto {
+        display: flex;
+        width: 200px;
+        height: 200px;
+    }
+
+    #footer {
+        height: 550px;
+    }
+
+    #footer .titulo-galeria h1 {
+        font-size: 10px;
+    }
+
+    #footer .titulo-galeria .linha {
+        margin-top: -50px;
+    }
+
+    #footer .galeria {
+        width: 90vw;
+        height: 50vh;
+        margin-top: -150px;
+        padding-bottom: 100px;
+    }
+    
+    #footer .foto {
+        width: 135px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+    #rodape #logoFace, #logoInsta {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+}
