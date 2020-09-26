@@ -1,0 +1,146 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "aside aside"
+                         "footer footer"
+                         "rodape rodape";
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(58, 58, 56);
+    grid-area: header;
+    box-shadow: 2px 1px 10px black;
+}
+
+#header img {
+    width: 100px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+#header ul {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 100px;
+    color: white;
+}
+
+#header ul a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header ul li {
+    display: inline-flex;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#main {
+    background-image: url('cabecalho2.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    grid-area: main;
+}
+
+#aside {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    
+    grid-area: aside;
+}
+
+#aside .texto {
+    width: 500px;
+    text-align: center;
+}
+
+
+#aside .imagem .foto {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+}
+
+#footer .titulo-galeria {
+    width: 100vw;
+}
+
+#footer .titulo-galeria .linha {
+    width: 50px;
+    border: 1px solid black;
+    margin-top: 80px;
+}
+
+
+#footer .titulo-galeria h1 {
+    text-align: center;
+    margin: 0px ;
+    font-size: 20px;
+}
+
+#footer .galeria {
+    width: 90vw;
+    height: 50vh;
+    padding-bottom: 100px;
+}
+
+#footer .foto {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#footer .foto:hover {
+    position:relative;
+    top:0;
+    top:-4px;
+    box-shadow:0 4px 4px #999;
+    transition: all .2s ease-in-out;
+}
+
+#rodape {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color:  rgb(58, 58, 56);
+    grid-area: rodape;
+}
+
+#rodape #logoFace, #logoInsta {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
